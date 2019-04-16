@@ -12,7 +12,11 @@ const store = createStore(rootReducer)
 // ReactDOM.render(<App />, document.getElementById('root'));
 
 render(
-    <Provider store={store}>
+      <Provider store={store}>
+        <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        </link>
+      </head>
       <App />
     </Provider>,
     document.getElementById('root')

@@ -4,14 +4,13 @@ import { connect } from 'react-redux'
 import RemoveTodo from '../containers/RemoveTodo';
 
 const Todo = ({ onClick, completed, text, id }) => (
-  <li><div align="center"
+  <li><div class="row"><div className="card-title" class="col"
     onClick={onClick}
     style={{
       textDecoration: completed ? 'line-through' : 'none'
     }}
   >
-    {text}
-    </div><div><RemoveTodo id={id}/></div>
+    {text}    </div><div class="col"><RemoveTodo id={id}/></div></div>
   </li>
     )
 
